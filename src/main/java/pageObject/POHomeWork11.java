@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class POHomeWork11 {
-        By CourseTitle = By.className("course-cat-bar_descr");
-        By CourseRate = By.className("CourseRate");
-        By CourseDescription = By.className("profession-bar_descr");
+        By CourseTitle = By.xpath("//span[@class=\"course-descriptor_header-text\"]");
+        By CourseRate = By.xpath("//span[@class=\"course-descriptor_level c-basic\"]");
+        By CourseDescription = By.xpath("//div[@class=\"introduction-sidebar-widget_content\"]");
 
         public POHomeWork11(WebDriver driver) {
                 this.driver = driver;
