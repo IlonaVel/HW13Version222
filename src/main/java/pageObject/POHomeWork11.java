@@ -15,14 +15,18 @@ public class POHomeWork11 {
         static WebDriver driver;
 
 
+        public void clickTitle () {
+                driver.findElement(CourseTitle).click();
+        }
+
                 public String getCourseRate()  {
-                        return driver.findElement(CourseTitle).getText();
+                        return driver.findElement(CourseRate).getText();
 
                 }
 
         public String getCourseTitle () {
 
-                return driver.findElement(CourseRate).getText();
+                return driver.findElement(CourseTitle).getText();
         }
 
         public String getCourseDescription () {

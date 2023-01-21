@@ -28,6 +28,12 @@ public class TestHomeWork11 extends BaseClass {
 
     @Test
     public void test1(){
-        System.out.println(poHomeWork11.getCourseTitle());
+        poHomeWork11.getCourseTitle();
+        poHomeWork11.clickTitle();
+        poHomeWork11.getCourseDescription();
+        poHomeWork11.getCourseRate();
     }
-}
+
+    }
+
+
