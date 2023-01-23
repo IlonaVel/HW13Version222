@@ -5,12 +5,13 @@ import hillel.pageobject.tests.util.BlogPage;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
+import pageObject.PFHomeWork12Lection14;
 import util.Scrolling;
 
 import static Config.BaseClass.driver;
 
 public class PFHomeWorkLection14Test extends BaseClass {
-    static PFHomeWorkLection14 blogteachers = PageFactory.initElements(driver, PFHomeWorkLection14.class);
+    static PFHomeWork12Lection14 blogteachers = PageFactory.initElements(driver, PFHomeWork12Lection14.class);
     String mainUrl = "https://dnipro.ithillel.ua/";
 
     @Before
@@ -18,6 +19,28 @@ public class PFHomeWorkLection14Test extends BaseClass {
         if (!driver.getCurrentUrl().contains(mainUrl)) {
             driver.get(mainUrl);
         }
+    }
+
+
+    @Test
+    public void blogButtonTest() {
+        blogteachers.schoolButtonClick();
+        blogteachers.teacherClick();
+    }
+
+   @Test
+    public void schoolText() throws Exception {
+       if (!blogteachers.getCschoolButton().equals("школа")) {
+           throw new Exception("coursetitle is not equals");
+        }
+    }
+
+    @Test
+    public void schoolButtonTest() throws Exception {
+        blogteachers.teacherClick();
+       if (!driver.getCurrentUrl().contains("https://dnipro.ithillel.ua/coaches")) {
+           throw new Exception("Url not equals");
+       }
     }
 
     @Test
@@ -33,7 +56,7 @@ public class PFHomeWorkLection14Test extends BaseClass {
             }
         }
 
-        blogteachers.printListteachers();
+        blogteachers.printListTeachers();
 
     }
 

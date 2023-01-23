@@ -11,11 +11,30 @@ public class PFHomeWork12Lection14 {
     @FindBy(xpath = "button[@class=\"site-nav-link -active\"]")
     WebElement schoolButton;
 
+
     @FindBy(xpath = "a[contains(@class, \"site-nav-dropdown_link\") and contains(text(), \"Викладачі\")]")
     WebElement teacherButton;
 
     @FindBy(xpath = "//li[@class=\"block-coaches_item\"]")
     List<WebElement> listteachers;
+
+//    public PFHomeWork12Lection14 (WebDriver driver) {
+//        this.driver = driver;
+//    }
+//    static WebDriver driver;
+
+    public void schoolButtonClick(){
+        schoolButton.click();
+    }
+
+    public String getCschoolButton()  {
+        return schoolButton.getText();
+
+    }
+
+    public void teacherClick(){
+        teacherButton.click();
+    }
 
     public void printListTeachers() {
         for (WebElement l : listteachers) {
