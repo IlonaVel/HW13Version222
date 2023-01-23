@@ -25,43 +25,43 @@ public class PFHomeWorkLection14Test extends BaseClass {
     @Test
     public void blogButtonTest() {
         blogteachers.schoolButtonClick();
-        blogteachers.teacherClick();
     }
 
-   @Test
+    @Test
     public void schoolText() throws Exception {
-       if (!blogteachers.getCschoolButton().equals("школа")) {
-           throw new Exception("coursetitle is not equals");
-        }
-    }
+        if (!blogteachers.getCschoolButton().equals("школа")) {
+            throw new Exception("coursetitle is not equals");
+
 
     @Test
     public void schoolButtonTest() throws Exception {
         blogteachers.teacherClick();
        if (!driver.getCurrentUrl().contains("https://dnipro.ithillel.ua/coaches")) {
-           throw new Exception("Url not equals");
-       }
-    }
-
-    @Test
-    public void test1() throws InterruptedException {
-        int i=0;
-        while(true){
-            if(blogteachers.getSizeListteachers()>i){
-                i=blogteachers.getSizeListteachers();
-                Scrolling.scroll(driver);
-                Thread.sleep(1000);
-            }else {
-                break;
-            }
+            throw new Exception("Url not equals");
         }
-
-        blogteachers.printListTeachers();
-
     }
 
+            @Test
+            public void test1 () throws InterruptedException {
+                int i = 0;
+                while (true) {
+                    if (blogteachers.getSizeListteachers() > i) {
+                        i = blogteachers.getSizeListteachers();
+                        Scrolling.scroll(driver);
+                        Thread.sleep(1000);
+                    } else {
+                        break;
+                    }
+                }
 
+                blogteachers.printListTeachers();
+
+            }
+
+
+        }
     }
+}
 
 
 
