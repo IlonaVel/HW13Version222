@@ -21,6 +21,12 @@ public class PFHomeWorkLection14Test extends BaseClass {
         }
     }
 
+    @Test
+    public void schoolText() throws Exception {
+        if (!blogteachers.getCschoolButton().equals("школа")) {
+            throw new Exception("coursetitle is not equals");
+        }
+    }
 
     @Test
     public void blogButtonTest() {
@@ -28,13 +34,8 @@ public class PFHomeWorkLection14Test extends BaseClass {
     }
 
     @Test
-    public void schoolText() throws Exception {
-        if (!blogteachers.getCschoolButton().equals("школа")) {
-            throw new Exception("coursetitle is not equals");
-
-
-    @Test
     public void schoolButtonTest() throws Exception {
+        blogteachers.schoolButtonClick();
         blogteachers.teacherClick();
        if (!driver.getCurrentUrl().contains("https://dnipro.ithillel.ua/coaches")) {
             throw new Exception("Url not equals");
@@ -43,6 +44,8 @@ public class PFHomeWorkLection14Test extends BaseClass {
 
             @Test
             public void test1 () throws InterruptedException {
+                blogteachers.schoolButtonClick();
+                blogteachers.teacherClick();
                 int i = 0;
                 while (true) {
                     if (blogteachers.getSizeListteachers() > i) {
@@ -60,8 +63,8 @@ public class PFHomeWorkLection14Test extends BaseClass {
 
 
         }
-    }
-}
+
+
 
 
 
