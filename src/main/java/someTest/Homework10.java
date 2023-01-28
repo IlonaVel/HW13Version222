@@ -18,11 +18,9 @@ public class Homework10 extends BaseClass {
 
    @Test
    public void test1() {
-        WebElement inputName = driver.findElement(By.id("user-name"));
+
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
-       WebElement inputPass = driver.findElement(By.id("password"));
        driver.findElement(By.id("password")).sendKeys("secret_sauce");
-       WebElement clickLog = driver.findElement(By.id("login-button"));
        driver.findElement(By.id("login-button")).click();
        System.out.println(driver.getTitle());
 

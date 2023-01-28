@@ -44,8 +44,8 @@ public class PFHomeWorkLection14Test extends BaseClass {
 
             @Test
             public void test1 () throws InterruptedException {
-                blogteachers.schoolButtonClick();
-                blogteachers.teacherClick();
+               blogteachers.schoolButtonClick();
+               blogteachers.teacherClick();
                 int i = 0;
                 while (true) {
                     if (blogteachers.getSizeListteachers() > i) {

@@ -7,7 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class PFHomeWork12Lection14 {
-    public static final String emailSelector = "//ul[@class=\"block-coaches_list\"]";
+    // public static final String emailSelector = "//ul[@class=\"block-coaches_list\"]";
+    public static final String emailSelector = "///li[@class=\"block-coaches_item\"]";
     @FindBy(xpath = "//li[contains(@class,\"site-nav-menu_item -submenu\")]/button[@class=\"site-nav-link\" and contains(text(), \"Школа\")]")
     WebElement schoolButton;
 
@@ -18,10 +19,6 @@ public class PFHomeWork12Lection14 {
     @FindBy(xpath = "//li[@class=\"block-coaches_item\"]")
     List<WebElement> listteachers;
 
-//    public PFHomeWork12Lection14 (WebDriver driver) {
-//        this.driver = driver;
-//    }
-//    static WebDriver driver;
 
     public void schoolButtonClick(){
         schoolButton.click();
