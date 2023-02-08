@@ -17,32 +17,28 @@ import java.util.ResourceBundle;
 @RunWith(Parameterized.class)
 
 public class ParametrCertik extends BaseCertik {
-    @Parameters
+    @Parameterized.Parameters
     public static Collection options() {
         return Arrays.asList(Certikenam.values());
     }
 
+
     public ParametrCertik(Certikenam certs) {
         if (bundle1 == null || !bundle1.getString("type1").equals(certs.getType1())) {
             driver.get("https://certificate.ithillel.ua/");
-            //driver.findElement(By.id("btn-consultation-hero")).click();
             bundle1 = ResourceBundle.getBundle(certs.getType1());
             certikPage = PageFactory.initElements(driver, CertikPage.class);
         }
     }
 
 
-//        @Test
-//        public void datacert () {
-//            certikPage.certikForm(bundle1.getString("certificate"));
-//            Assert.assertEquals(bundle1.getString("bol"), String.valueOf(certikPage.messageFalSe()));
-//            Assert.assertEquals(bundle1.getString("bol"), String.valueOf(certikPage.messageTruE()));
-//        }
 
     @Test
-    public void centCerNumber(String number, String result) {
-        Assert.assertEquals("#" + number, String.valueOf(CertikPage.checkCER(number)), result);
-
+    public void datacert() throws InterruptedException {
+        certikPage.certikForm(bundle1.getString("certificate"));
+        Thread.sleep(2000);
+        String actual = String.valueOf(driver.getCurrentUrl().contains("view"));
+        String expected = bundle1.getString("bol");
+        Assert.assertEquals(expected, actual);
     }
 }
-

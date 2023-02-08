@@ -10,8 +10,12 @@ public class DriverConfig {
     public static WebDriver createDriver(Browsers browsers) {
         if (driver == null) {
             switch (browsers) {
-                case CHROME -> createChrome();
-                case CHROMEINCOGNITO -> createChromeIncognito();
+                //case CHROME -> createChrome();
+                case CHROME:
+                    break;
+                //case CHROMEINCOGNITO -> createChromeIncognito();
+                case CHROMEPROXY:
+                    break;
             }
 
         }
