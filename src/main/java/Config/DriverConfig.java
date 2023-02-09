@@ -12,10 +12,12 @@ public class DriverConfig {
             switch (browsers) {
                 //case CHROME -> createChrome();
                 case CHROME:
+                    createChrome();
                     break;
-                //case CHROMEINCOGNITO -> createChromeIncognito();
-                case CHROMEPROXY:
-                    break;
+                case CHROMEINCOGNITO:
+                    createChromeIncognito();
+//                case CHROMEPROXY:
+//                    break;
             }
 
         }
