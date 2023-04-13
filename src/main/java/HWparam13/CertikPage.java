@@ -14,9 +14,6 @@ public class CertikPage {
         WebElement buttoncert;
 
 
-
-
-
         public void certikForm(String certificate) {
             this.certificate.sendKeys(certificate);
             buttoncert.click();

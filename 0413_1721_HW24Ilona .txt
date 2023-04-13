@@ -1,0 +1,21 @@
+1681395690434WARNING https://assets.ithillel.ua/thirdparty/fbevents.js 23:40486 "[Meta Pixel] - Duplicate Pixel ID: 1416513551990074."
+1681395690827SEVERE https://www.google.com.ua/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KVGD0SKTQC&cid=1060583413.1681395691&gtm=45je34a0&aip=1&z=118358583 - Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED
+1681395695284SEVERE https://assets.ithillel.ua/assets/js/school/certificate.bundle.js?1681119355 19:267884 Uncaught TypeError: Cannot set properties of null (setting 'href')
+1681395696034WARNING https://assets.ithillel.ua/thirdparty/fbevents.js 23:40486 "[Meta Pixel] - Duplicate Pixel ID: 1416513551990074."
+1681395698036SEVERE https://lms.ithillel.ua/api/certificates?ref=99999@@@@@&&&& - Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+1681395698039SEVERE https://assets.ithillel.ua/assets/js/school/certificate.bundle.js?1681119355 19:14609 "Api / get:" Error: Request failed with status code 500
+    at t.exports (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:43:169)
+    at t.exports (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:115:215)
+    at f.onreadystatechange (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:37:1122)
+1681395699512WARNING https://assets.ithillel.ua/thirdparty/fbevents.js 23:40486 "[Meta Pixel] - Duplicate Pixel ID: 1416513551990074."
+1681395701579SEVERE https://lms.ithillel.ua/api/certificates?ref=FGRNTHHKYJKLOPPOOJJJJJJJ - Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+1681395701580SEVERE https://assets.ithillel.ua/assets/js/school/certificate.bundle.js?1681119355 19:14609 "Api / get:" Error: Request failed with status code 500
+    at t.exports (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:43:169)
+    at t.exports (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:115:215)
+    at f.onreadystatechange (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:37:1122)
+1681395702958WARNING https://assets.ithillel.ua/thirdparty/fbevents.js 23:40486 "[Meta Pixel] - Duplicate Pixel ID: 1416513551990074."
+1681395704821SEVERE https://lms.ithillel.ua/api/certificates?ref=98765432112345678900000 - Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+1681395704822SEVERE https://assets.ithillel.ua/assets/js/school/certificate.bundle.js?1681119355 19:14609 "Api / get:" Error: Request failed with status code 500
+    at t.exports (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:43:169)
+    at t.exports (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:115:215)
+    at f.onreadystatechange (https://assets.ithillel.ua/assets/js/school/vendor.bundle.js?1681119355:37:1122)
